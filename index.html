@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authentication Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+
+
+        <div class="container">
+            
+            <!-- The login and signup tabs -->
+            <div class="tabs">
+
+                <button onclick="toggleForm('login')" id="tabButtonLogin" class="active">Login</button>
+
+                <button onclick="toggleForm('signup')" id="tabButtonSignup">Sign Up</button>
+
+            </div>
+
+            <!-- Login form displayed when login tab button is clicked-->
+            <div id="loginForm" class="form">
+                
+                <div class="form-row">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" placeholder="Username">
+                </div>
+
+                <div class="form-row">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Password">
+                </div>
+
+                <button onclick="login()">Submit</button>
+            
+            </div>
+            
+            <!-- Signup form displayed when signup tab button is clicked -->
+            
+            
+            <div id="signupForm" class="form" style="display: none;">
+                <div class="form-row">
+                    <label for="signupFirstName">First Name</label>
+                    <input type="text" id="signupFirstName" placeholder="First Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="signupLastName">Last Name</label>
+                    <input type="text" id="signupLastName" placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" placeholder="Username">
+                </div>
+
+                <div class="form-row">    
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Password">
+                </div>
+
+                <div class="form-row">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" placeholder="Confirm Password">
+                </div>
+
+                <button onclick="signup()">Submit</button>
+            
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>    
